@@ -16,5 +16,25 @@
 
 .table {
     width: 100%;
-    
+}
+
+.edit {
+    color: rgb(218, 226, 105);
+}
+
+.delete {
+    color: rgb(194, 71, 96);
+    margin-left: .5rem;
+}
+
+.mat-header {
+    width: 5rem;
+}
+
+.livros {
+    color: rgb(76, 76, 228);
+}
+
+button {
+    margin-bottom: 0.8rem;
 }
