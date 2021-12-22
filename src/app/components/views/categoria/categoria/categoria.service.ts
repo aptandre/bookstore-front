@@ -16,9 +16,20 @@ export class CategoriaService {
 
   findAll():Observable<Categoria[]> {
     // Colquei a barra aqui mas não resolveu
-    const url = `${this.baseUrl}categorias`
+    const url = `${this.baseUrl}/categorias`
     console.log(url)
     return this.http.get<Categoria[]>(url)
+  }
+
+  // aula 42
+  findById(id: String): Observable<Categoria> {
+    const url = `${this.baseUrl}/categorias/${id}`;
+    return this.http.get<Categoria>(url);
+  }
+
+  delete(id: String): Observable<void> {
+    const url = `${this.baseUrl}/categorias/${id}`;
+    return this.http.delete<void>(url)
   }
 
   // aula 39

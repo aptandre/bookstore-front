@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://my-bookstore-virtus.herokuapp.com/'
+  baseUrl: 'https://my-bookstore-virtus.herokuapp.com'
 };
 
 /*
